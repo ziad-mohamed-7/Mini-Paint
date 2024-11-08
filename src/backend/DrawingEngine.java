@@ -1,6 +1,5 @@
 package backend;
 
-import javafx.scene.shape.Shape;
 import javafx.scene.canvas.GraphicsContext;
 
 public interface DrawingEngine {
