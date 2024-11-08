@@ -1,11 +1,14 @@
 package backend;
 
-import java.awt.*;
+import javafx.geometry.Point2D;
 import java.util.Map;
+import javafx.scene.paint.Color;
+import javafx.scene.canvas.GraphicsContext;
+
 
 public interface Shape {
-    public void setPosition(Point position);
-    public Point getPosition();
+    public void setPosition(Point2D position);
+    public Point2D getPosition();
 
     public void setProperties(Map<String, Double> properties);
     public Map<String, Double> getProperties();
@@ -15,5 +18,5 @@ public interface Shape {
     public void setFillColor(Color color);
     public Color getFillColor();
 
-    public void draw(java.awt.Graphics canvas);
+    public void draw(GraphicsContext canvas);
 }
