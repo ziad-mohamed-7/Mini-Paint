@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="added Shapes classes and adjusted backend to fit with using javaFX" />
+    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="added Shapes classes and adjusted backend to fit with using javaFX">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/LineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/LineSegment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Square.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +45,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ziad-mohamed-7"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/ziad-mohamed-7/Mini-Paint.git",
@@ -93,7 +105,7 @@
       <updated>1731069399629</updated>
       <workItem from="1731069400599" duration="803000" />
       <workItem from="1731070223579" duration="1000" />
-      <workItem from="1731098650057" duration="1484000" />
+      <workItem from="1731098650057" duration="4108000" />
     </task>
     <task id="LOCAL-00001" summary="added basic classes">
       <option name="closed" value="true" />
@@ -119,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731099911043</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added Shapes classes and adjusted backend to fit with using javaFX">
+      <option name="closed" value="true" />
+      <created>1731100174885</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1731100174885</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
