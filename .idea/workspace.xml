@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="implemented Shapes classes">
-      <change afterPath="$PROJECT_DIR$/src/backend/Main.java" afterDir="false" />
+    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="adjusted DrawingEngine and created a Main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +102,7 @@
       <updated>1731069399629</updated>
       <workItem from="1731069400599" duration="803000" />
       <workItem from="1731070223579" duration="1000" />
-      <workItem from="1731098650057" duration="4745000" />
+      <workItem from="1731098650057" duration="5482000" />
     </task>
     <task id="LOCAL-00001" summary="added basic classes">
       <option name="closed" value="true" />
@@ -144,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731105288951</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adjusted DrawingEngine and created a Main">
+      <option name="closed" value="true" />
+      <created>1731106043408</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731106043408</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +162,7 @@
     <MESSAGE value="added basic classes" />
     <MESSAGE value="added Shapes classes and adjusted backend to fit with using javaFX" />
     <MESSAGE value="implemented Shapes classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented Shapes classes" />
+    <MESSAGE value="adjusted DrawingEngine and created a Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted DrawingEngine and created a Main" />
   </component>
 </project>
