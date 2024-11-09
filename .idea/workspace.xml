@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="adjusted DrawingEngine and created a Main">
+    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="adjusted some lines">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/MainWindow.java" afterDir="false" />
     </list>
@@ -42,18 +42,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ziad-mohamed-7"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ziad-mohamed-7&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ziad-mohamed-7/Mini-Paint.git",
-    "accountId": "785ee2c1-4879-49fc-8cbe-81b4b8d8d3ac"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ziad-mohamed-7/Mini-Paint.git&quot;,
+    &quot;accountId&quot;: &quot;785ee2c1-4879-49fc-8cbe-81b4b8d8d3ac&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -102,7 +102,9 @@
       <updated>1731069399629</updated>
       <workItem from="1731069400599" duration="803000" />
       <workItem from="1731070223579" duration="1000" />
-      <workItem from="1731098650057" duration="5482000" />
+      <workItem from="1731098650057" duration="5628000" />
+      <workItem from="1731150169726" duration="317000" />
+      <workItem from="1731152208051" duration="4418000" />
     </task>
     <task id="LOCAL-00001" summary="added basic classes">
       <option name="closed" value="true" />
@@ -152,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731106043408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adjusted some lines">
+      <option name="closed" value="true" />
+      <created>1731106510093</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731106510095</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +173,7 @@
     <MESSAGE value="added Shapes classes and adjusted backend to fit with using javaFX" />
     <MESSAGE value="implemented Shapes classes" />
     <MESSAGE value="adjusted DrawingEngine and created a Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusted DrawingEngine and created a Main" />
+    <MESSAGE value="adjusted some lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted some lines" />
   </component>
 </project>
