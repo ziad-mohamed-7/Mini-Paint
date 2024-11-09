@@ -4,12 +4,11 @@ import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
-import java.util.HashMap;
 import java.util.Map;
 
-public class LineSegment extends CommonAttributes{
-    public LineSegment(String shapeID, Point2D position, Map<String, Double> properties, Color color) {
-        super(shapeID, position, properties, color);
+public class LineSegment extends ShapeExtended {
+    public LineSegment(String shapeID) {
+        super(shapeID);
     }
 
     @Override

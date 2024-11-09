@@ -4,13 +4,12 @@ import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
-import java.util.HashMap;
 import java.util.Map;
 
-public class Square extends CommonAttributes {
+public class Square extends ShapeExtended {
 
-    public Square(String shapeID, Point2D position, Map<String, Double> properties, Color color, Color fillColor) {
-        super(shapeID, position, properties, color, fillColor);
+    public Square(String shapeID) {
+        super(shapeID);
     }
 
     @Override

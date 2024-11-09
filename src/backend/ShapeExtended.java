@@ -3,31 +3,26 @@ package backend;
 import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class CommonAttributes implements Shape{
+public abstract class ShapeExtended implements Shape{
     private String shapeID;
     private Point2D position;
     private Map<String, Double> properties = new HashMap<>();
     private Color color;
     private Color fillColor;
 
-    public CommonAttributes(String shapeID, Point2D position, Map<String, Double> properties, Color color, Color fillColor) {
+    public ShapeExtended(String shapeID) {
         this.shapeID = shapeID;
-        this.position = position;
-        this.properties = properties;
-        this.color = color;
-        this.fillColor = fillColor;
     }
-
-    public CommonAttributes(String shapeID, Point2D position, Map<String, Double> properties, Color color) {
-        this.shapeID = shapeID;
-        this.position = position;
-        this.properties = properties;
-        this.color = color;
-    }
+//
+//    public ShapeExtended(String shapeID, Point2D position, Map<String, Double> properties, Color color) {
+//        this.shapeID = shapeID;
+//        this.position = position;
+//        this.properties = properties;
+//        this.color = color;
+//    }
 
     public String getShapeID() {
         return shapeID;

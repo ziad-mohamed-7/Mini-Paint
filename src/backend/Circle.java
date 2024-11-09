@@ -4,13 +4,12 @@ import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
 
-import java.util.HashMap;
 import java.util.Map;
 
-public class Circle extends CommonAttributes {
+public class Circle extends ShapeExtended {
 
-    public Circle(String shapeID, Point2D position, Map<String, Double> properties, Color color, Color fillColor) {
-        super(shapeID, position, properties, color, fillColor);
+    public Circle(String shapeID) {
+        super(shapeID);
     }
 
     @Override
