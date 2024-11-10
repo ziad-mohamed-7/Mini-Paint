@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="added abstract class that implements Shape">
+    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="adjustments and trials">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/CommonAttributes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/ShapeExtended.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/LineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/LineSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,25 +67,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.MainWindow.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "backend",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ziada/Downloads/openjfx-23.0.1_windows-x64_bin-sdk/javafx-sdk-23.0.1/lib/javafx.web.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.MainWindow.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ziada/Downloads/openjfx-23.0.1_windows-x64_bin-sdk/javafx-sdk-23.0.1/lib/javafx.web.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -113,7 +108,8 @@
       <workItem from="1731150169726" duration="317000" />
       <workItem from="1731152208051" duration="4679000" />
       <workItem from="1731170965613" duration="2386000" />
-      <workItem from="1731178691820" duration="3904000" />
+      <workItem from="1731178691820" duration="4122000" />
+      <workItem from="1731192421016" duration="3887000" />
     </task>
     <task id="LOCAL-00001" summary="added basic classes">
       <option name="closed" value="true" />
@@ -187,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731174456273</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="adjustments and trials">
+      <option name="closed" value="true" />
+      <created>1731182851494</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1731182851494</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +205,7 @@
     <MESSAGE value="adjusted some lines" />
     <MESSAGE value="added some implementations to the frontend" />
     <MESSAGE value="added abstract class that implements Shape" />
-    <option name="LAST_COMMIT_MESSAGE" value="added abstract class that implements Shape" />
+    <MESSAGE value="adjustments and trials" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjustments and trials" />
   </component>
 </project>

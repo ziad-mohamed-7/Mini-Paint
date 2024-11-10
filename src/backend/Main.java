@@ -23,7 +23,7 @@ public class Main implements DrawingEngine{
 
     @Override
     public void refresh(GraphicsContext canvas) {
-//        canvas.clearRect(0, 0, canvas.getCanvas().getWidth(), canvas.getCanvas().getHeight());
+        canvas.clearRect(0, 0, canvas.getCanvas().getWidth(), canvas.getCanvas().getHeight());
         for (Shape shape : shapes) {
             shape.draw(canvas);
         }
