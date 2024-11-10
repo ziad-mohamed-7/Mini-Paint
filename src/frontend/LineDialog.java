@@ -1,12 +1,10 @@
 package frontend;
 
-import backend.Circle;
 import backend.DrawingEngine;
 import backend.LineSegment;
 import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.TextInputDialog;
-import javafx.scene.paint.Color;
 
 import java.util.Map;
 import java.util.Optional;

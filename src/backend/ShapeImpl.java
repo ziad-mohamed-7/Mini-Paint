@@ -16,25 +16,10 @@ public abstract class ShapeImpl implements Shape{
     public ShapeImpl(String shapeID) {
         this.shapeID = shapeID;
     }
-//
-//    public ShapeImpl(String shapeID, Point2D position, Map<String, Double> properties, Color color) {
-//        this.shapeID = shapeID;
-//        this.position = position;
-//        this.properties = properties;
-//        this.color = color;
-//    }
 
     public String getShapeID() {
         return shapeID;
     }
-
-//    @Override
-//    public String toString() {
-//        return "ShapeImpl{" +
-//                "shapeID='" + shapeID + '\'' +
-//                '}';
-//    }
-
 
     @Override
     public String toString() {
@@ -83,6 +68,4 @@ public abstract class ShapeImpl implements Shape{
 
     @Override
     public abstract void draw(GraphicsContext canvas);
-
-
 }

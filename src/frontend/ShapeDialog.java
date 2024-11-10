@@ -7,7 +7,6 @@ import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Dialog;
 import javafx.scene.control.TextInputDialog;
 import javafx.scene.paint.Color;
-
 import java.util.Optional;
 
 public abstract class ShapeDialog {

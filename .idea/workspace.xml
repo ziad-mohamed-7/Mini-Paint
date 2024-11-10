@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="finalized the main window and added a stylesheet">
+    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="adjusted stylesheet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/ShapeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/ShapeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/CircleDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/CircleDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/LineDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/LineDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/RectDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/RectDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/ShapeDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/ShapeDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/SquareDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/SquareDialog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +119,9 @@
       <workItem from="1731192421016" duration="4037000" />
       <workItem from="1731227628932" duration="6106000" />
       <workItem from="1731236386827" duration="10096000" />
-      <workItem from="1731248870256" duration="5472000" />
+      <workItem from="1731248870256" duration="5943000" />
+      <workItem from="1731259083763" duration="666000" />
+      <workItem from="1731264502093" duration="4020000" />
     </task>
     <task id="LOCAL-00001" summary="added basic classes">
       <option name="closed" value="true" />
@@ -227,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731251263158</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="adjusted stylesheet">
+      <option name="closed" value="true" />
+      <created>1731254917082</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1731254917082</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +262,7 @@
     <MESSAGE value="added classes for dialog to stop repetition of code" />
     <MESSAGE value="adjusted backend implementation" />
     <MESSAGE value="finalized the main window and added a stylesheet" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalized the main window and added a stylesheet" />
+    <MESSAGE value="adjusted stylesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjusted stylesheet" />
   </component>
 </project>

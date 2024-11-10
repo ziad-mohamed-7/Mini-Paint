@@ -16,7 +16,6 @@ import javafx.scene.layout.VBox;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-
 import java.util.*;
 
 public class MainWindow extends Application {
@@ -79,8 +78,8 @@ public class MainWindow extends Application {
             if (shapeSelected != null) {
                 ColorPicker colorPicker = new ColorPicker(Color.BLACK);
                 Dialog<Color> colorDialog = new Dialog<>();
-                colorDialog.setTitle("Pick Color");
-                colorDialog.setHeaderText("Pick a color for the shape:");
+                colorDialog.setTitle("Choose Color");
+                colorDialog.setHeaderText("Choose a color for the shape:");
                 colorDialog.getDialogPane().setContent(colorPicker);
                 colorDialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
                 colorDialog.setResultConverter(dialogButton -> {
@@ -98,8 +97,8 @@ public class MainWindow extends Application {
                         shapeSelected.setColor(color);
                         ColorPicker fillColorPicker = new ColorPicker(Color.BLACK);
                         Dialog<Color> fillColorDialog = new Dialog<>();
-                        fillColorDialog.setTitle("Pick a Fill Color");
-                        fillColorDialog.setHeaderText("Pick a fill color for the shape:");
+                        fillColorDialog.setTitle("Choose Fill Color");
+                        fillColorDialog.setHeaderText("Choose a fill color for the shape:");
                         fillColorDialog.getDialogPane().setContent(fillColorPicker);
                         fillColorDialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
                         fillColorDialog.setResultConverter(dialogButton -> {
@@ -130,19 +129,14 @@ public class MainWindow extends Application {
         VBox controlBox = new VBox(10, slctShapeLabel, optionsComboBox, actionBox);
         controlBox.setAlignment(Pos.CENTER);
 
-
-//        HBox layout5 = new HBox(10, controlBox, drawingLayout);
-//        layout5.setAlignment(Pos.CENTER);
         BorderPane mainLayout = new BorderPane();
         mainLayout.setPadding(new Insets(10));
-//        mainLayout.setTop(buttonBox);
-//        mainLayout.setCenter(canvas);
         mainLayout.setRight(drawingLayout);
         mainLayout.setLeft(controlBox);
 
 
         Scene scene = new Scene(mainLayout, 800, 600);
-        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm()); // Add stylesheet
+        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
         window.setScene(scene);
         window.setTitle("Vector Drawing Application");
         window.show();

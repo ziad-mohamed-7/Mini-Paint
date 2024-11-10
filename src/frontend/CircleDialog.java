@@ -5,14 +5,13 @@ import backend.DrawingEngine;
 import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.TextInputDialog;
-
 import java.util.Map;
 import java.util.Optional;
-
 import static frontend.MainWindow.getShapeOptions;
 
 public class CircleDialog extends ShapeDialog {
     private static int circleCounter = 1;
+
     @Override
     public void createShape(DrawingEngine engine, GraphicsContext gcCanvas) {
         TextInputDialog radiusDialog = new TextInputDialog("50");
@@ -38,6 +37,5 @@ public class CircleDialog extends ShapeDialog {
                 });
             });
         });
-
     }
 }
