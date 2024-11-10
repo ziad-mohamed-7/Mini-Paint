@@ -4,17 +4,12 @@ import backend.*;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.geometry.Point2D;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextInputDialog;
+import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -22,18 +17,19 @@ import javafx.stage.Stage;
 import java.util.*;
 
 public class MainWindow extends Application {
+
     public static void main(String[] args) {
         launch(args);
     }
 
-    @Override
-    public void start(Stage window) throws Exception {
-//        Main engine = new Main();
-        DrawingEngine engine = new Main();
+    static ObservableList<ShapeImpl> shapeOptions = FXCollections.observableArrayList();
 
-        ObservableList<ShapeExtended> shapeOptions = FXCollections.observableArrayList();
+    @Override
+    public void start(Stage window) {
+        DrawingEngine engine = new DwgEngineImpl();
+
         for (Shape shape : engine.getShapes()) {
-            shapeOptions.add((ShapeExtended) shape);
+            shapeOptions.add((ShapeImpl) shape);
         }
 
 
@@ -42,33 +38,26 @@ public class MainWindow extends Application {
 //        Pane drawingArea = new Pane(canvas);
 
         Button circleButton = new Button("Circle");
-        circleButton.setOnAction(e -> {
-            TextInputDialog dialog = new TextInputDialog("50");
-            dialog.setTitle("Enter Radius");
-            dialog.setHeaderText("Enter the radius for the circle:");
-            dialog.setContentText("Radius:");
-            Optional<String> result = dialog.showAndWait();
-            result.ifPresent(radiusStr -> {
-                double radius = Double.parseDouble(radiusStr);
-                Circle circle = new Circle("circle01");
-                circle.setPosition(new Point2D(200, 200));
-                circle.setProperties(Map.of("radius", radius));
-                circle.setColor(Color.BLACK);
-                circle.setFillColor(Color.YELLOW);
-                engine.addShape(circle);
-                shapeOptions.add(circle);
-                engine.refresh(gcCanvas);
-            });
+        circleButton.setOnAction(_ ->{
+            CircleDialog circleDialog = new CircleDialog();
+            circleDialog.createShape(engine, gcCanvas);
         });
         Button lineButton = new Button("Line Segment");
-        lineButton.setOnAction(e -> {
+        lineButton.setOnAction(_ -> {
+            LineDialog lineDialog = new LineDialog();
+            lineDialog.createShape(engine, gcCanvas);
         });
         Button squareButton = new Button("Square");
-        squareButton.setOnAction(e -> {
+        squareButton.setOnAction(_ -> {
+            SquareDialog squareDialog = new SquareDialog();
+            squareDialog.createShape(engine, gcCanvas);
         });
         Button rectButton = new Button("Rectangle");
-        rectButton.setOnAction(e -> {
+        rectButton.setOnAction(_ -> {
+            RectDialog rectDialog = new RectDialog();
+            rectDialog.createShape(engine, gcCanvas);
         });
+
         HBox layout1 = new HBox(50, circleButton, lineButton, squareButton, rectButton);
         layout1.setAlignment(Pos.TOP_RIGHT);
 
@@ -77,29 +66,62 @@ public class MainWindow extends Application {
 
 
         Label slctShapeLabel = new Label("Select Shape");
-        ComboBox<ShapeExtended> optionsComboBox = new ComboBox<>(shapeOptions);
+        ComboBox<ShapeImpl> optionsComboBox = new ComboBox<>(shapeOptions);
 
-//         = FXCollections.observableList(Arrays.asList((ShapeExtended) engine.getShapes()));
-//        optionsComboBox.setValue("active");
 
         Button colorizeButton = new Button("Colorize");
-        colorizeButton.setOnAction(e -> {
-            ShapeExtended shapeSelected = optionsComboBox.getValue();
+        colorizeButton.setOnAction(_ -> {
+            ShapeImpl shapeSelected = optionsComboBox.getValue();
             if (shapeSelected != null) {
-
-//                optionsComboBox.getValue().setColor();
+                ColorPicker colorPicker = new ColorPicker(Color.BLACK);
+                Dialog<Color> colorDialog = new Dialog<>();
+                colorDialog.setTitle("Pick Color");
+                colorDialog.setHeaderText("Pick a color for the shape:");
+                colorDialog.getDialogPane().setContent(colorPicker);
+                colorDialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
+                colorDialog.setResultConverter(dialogButton -> {
+                    if (dialogButton == ButtonType.OK) {
+                        return colorPicker.getValue();
+                    }
+                    return null;
+                });
+                Optional<Color> colorResult = colorDialog.showAndWait();
+                colorResult.ifPresent(color -> {
+                    if (shapeSelected instanceof LineSegment) {
+                        shapeSelected.setColor(color);
+                        engine.refresh(gcCanvas);
+                    }else {
+                        shapeSelected.setColor(color);
+                        ColorPicker fillColorPicker = new ColorPicker(Color.BLACK);
+                        Dialog<Color> fillColorDialog = new Dialog<>();
+                        fillColorDialog.setTitle("Pick a Fill Color");
+                        fillColorDialog.setHeaderText("Pick a fill color for the shape:");
+                        fillColorDialog.getDialogPane().setContent(fillColorPicker);
+                        fillColorDialog.getDialogPane().getButtonTypes().addAll(ButtonType.OK, ButtonType.CANCEL);
+                        fillColorDialog.setResultConverter(dialogButton -> {
+                            if (dialogButton == ButtonType.OK) {
+                                return fillColorPicker.getValue();
+                            }
+                            return null;
+                        });
+                        Optional<Color> fillColorResult = fillColorDialog.showAndWait();
+                        fillColorResult.ifPresent(fillColor -> {
+                            shapeSelected.setFillColor(fillColor);
+                            engine.refresh(gcCanvas);
+                        });
+                    }
+                });
             }
-
         });
         Button deleteButton = new Button("Delete");
-        deleteButton.setOnAction(e -> {
-            ShapeExtended shapeSelected = optionsComboBox.getValue();
+        deleteButton.setOnAction(_ -> {
+            ShapeImpl shapeSelected = optionsComboBox.getValue();
             if (shapeSelected != null) {
                 engine.removeShape(shapeSelected);
                 shapeOptions.remove(shapeSelected);
                 engine.refresh(gcCanvas);
             }
-            });
+        });
         HBox layout3 = new HBox(10, colorizeButton, deleteButton);
         VBox layout4 = new VBox(10, slctShapeLabel, optionsComboBox, layout3);
         layout4.setAlignment(Pos.CENTER);
@@ -112,5 +134,9 @@ public class MainWindow extends Application {
         Scene scene = new Scene(layout5, 800, 600);
         window.setScene(scene);
         window.show();
+    }
+
+    public static ObservableList<ShapeImpl> getShapeOptions() {
+        return shapeOptions;
     }
 }
