@@ -4,13 +4,16 @@ import backend.*;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -35,7 +38,8 @@ public class MainWindow extends Application {
 
         Canvas canvas = new Canvas(500, 500);
         GraphicsContext gcCanvas = canvas.getGraphicsContext2D();
-//        Pane drawingArea = new Pane(canvas);
+        Pane drawingArea = new Pane(canvas);
+        drawingArea.getStyleClass().add("drawing-area");
 
         Button circleButton = new Button("Circle");
         circleButton.setOnAction(_ ->{
@@ -58,11 +62,11 @@ public class MainWindow extends Application {
             rectDialog.createShape(engine, gcCanvas);
         });
 
-        HBox layout1 = new HBox(50, circleButton, lineButton, squareButton, rectButton);
-        layout1.setAlignment(Pos.TOP_RIGHT);
+        HBox buttonBox = new HBox(20, circleButton, lineButton, squareButton, rectButton);
+        buttonBox.setAlignment(Pos.CENTER);
 
 
-        VBox layout2 = new VBox(20, layout1, canvas);
+        VBox drawingLayout = new VBox(20, buttonBox, drawingArea);
 
 
         Label slctShapeLabel = new Label("Select Shape");
@@ -122,17 +126,25 @@ public class MainWindow extends Application {
                 engine.refresh(gcCanvas);
             }
         });
-        HBox layout3 = new HBox(10, colorizeButton, deleteButton);
-        VBox layout4 = new VBox(10, slctShapeLabel, optionsComboBox, layout3);
-        layout4.setAlignment(Pos.CENTER);
+        HBox actionBox = new HBox(10, colorizeButton, deleteButton);
+        VBox controlBox = new VBox(10, slctShapeLabel, optionsComboBox, actionBox);
+        controlBox.setAlignment(Pos.CENTER);
 
 
-        HBox layout5 = new HBox(10, layout4, layout2);
+//        HBox layout5 = new HBox(10, controlBox, drawingLayout);
 //        layout5.setAlignment(Pos.CENTER);
+        BorderPane mainLayout = new BorderPane();
+        mainLayout.setPadding(new Insets(10));
+//        mainLayout.setTop(buttonBox);
+//        mainLayout.setCenter(canvas);
+        mainLayout.setRight(drawingLayout);
+        mainLayout.setLeft(controlBox);
 
 
-        Scene scene = new Scene(layout5, 800, 600);
+        Scene scene = new Scene(mainLayout, 800, 600);
+        scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm()); // Add stylesheet
         window.setScene(scene);
+        window.setTitle("Vector Drawing Application");
         window.show();
     }
 

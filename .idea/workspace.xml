@@ -4,20 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="solved the id problem by letting the ComboBox take the Shape Object instead of id String">
-      <change afterPath="$PROJECT_DIR$/src/frontend/CircleDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/LineDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/RectDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/ShapeDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/SquareDialog.java" afterDir="false" />
+    <list default="true" id="8ddda6cf-8aef-4753-81be-cbc837bd181a" name="Changes" comment="finalized the main window and added a stylesheet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/LineSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/LineSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/DwgEngineImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/ShapeExtended.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/ShapeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/Square.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +113,7 @@
       <workItem from="1731192421016" duration="4037000" />
       <workItem from="1731227628932" duration="6106000" />
       <workItem from="1731236386827" duration="10096000" />
-      <workItem from="1731248870256" duration="1641000" />
+      <workItem from="1731248870256" duration="5472000" />
     </task>
     <task id="LOCAL-00001" summary="added basic classes">
       <option name="closed" value="true" />
@@ -213,7 +203,31 @@
       <option name="project" value="LOCAL" />
       <updated>1731197191588</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added classes for dialog to stop repetition of code">
+      <option name="closed" value="true" />
+      <created>1731251192548</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1731251192548</updated>
+    </task>
+    <task id="LOCAL-00013" summary="adjusted backend implementation">
+      <option name="closed" value="true" />
+      <created>1731251229694</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1731251229694</updated>
+    </task>
+    <task id="LOCAL-00014" summary="finalized the main window and added a stylesheet">
+      <option name="closed" value="true" />
+      <created>1731251263158</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1731251263158</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +243,9 @@
     <MESSAGE value="added abstract class that implements Shape" />
     <MESSAGE value="adjustments and trials" />
     <MESSAGE value="solved the id problem by letting the ComboBox take the Shape Object instead of id String" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved the id problem by letting the ComboBox take the Shape Object instead of id String" />
+    <MESSAGE value="added classes for dialog to stop repetition of code" />
+    <MESSAGE value="adjusted backend implementation" />
+    <MESSAGE value="finalized the main window and added a stylesheet" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalized the main window and added a stylesheet" />
   </component>
 </project>
