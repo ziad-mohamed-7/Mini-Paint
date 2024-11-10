@@ -1,12 +1,8 @@
 package backend;
 
-import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
 
-import java.util.Map;
-
-public class Circle extends ShapeExtended {
+public class Circle extends ShapeImpl {
 
     public Circle(String shapeID) {
         super(shapeID);

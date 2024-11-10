@@ -1,12 +1,8 @@
 package backend;
 
-import javafx.geometry.Point2D;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
 
-import java.util.Map;
-
-public class Rectangle extends ShapeExtended {
+public class Rectangle extends ShapeImpl {
 
     public Rectangle(String shapeID) {
         super(shapeID);

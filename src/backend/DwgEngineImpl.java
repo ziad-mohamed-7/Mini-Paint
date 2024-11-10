@@ -3,7 +3,7 @@ package backend;
 import javafx.scene.canvas.GraphicsContext;
 import java.util.ArrayList;
 
-public class Main implements DrawingEngine{
+public class DwgEngineImpl implements DrawingEngine{
     private ArrayList<Shape> shapes = new ArrayList<>();
 
     @Override

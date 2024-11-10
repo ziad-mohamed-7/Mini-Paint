@@ -6,18 +6,18 @@ import javafx.scene.paint.Color;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class ShapeExtended implements Shape{
+public abstract class ShapeImpl implements Shape{
     private String shapeID;
     private Point2D position;
     private Map<String, Double> properties = new HashMap<>();
     private Color color;
     private Color fillColor;
 
-    public ShapeExtended(String shapeID) {
+    public ShapeImpl(String shapeID) {
         this.shapeID = shapeID;
     }
 //
-//    public ShapeExtended(String shapeID, Point2D position, Map<String, Double> properties, Color color) {
+//    public ShapeImpl(String shapeID, Point2D position, Map<String, Double> properties, Color color) {
 //        this.shapeID = shapeID;
 //        this.position = position;
 //        this.properties = properties;
@@ -25,6 +25,19 @@ public abstract class ShapeExtended implements Shape{
 //    }
 
     public String getShapeID() {
+        return shapeID;
+    }
+
+//    @Override
+//    public String toString() {
+//        return "ShapeImpl{" +
+//                "shapeID='" + shapeID + '\'' +
+//                '}';
+//    }
+
+
+    @Override
+    public String toString() {
         return shapeID;
     }
 
@@ -71,12 +84,5 @@ public abstract class ShapeExtended implements Shape{
     @Override
     public abstract void draw(GraphicsContext canvas);
 
-//        if (position != null && color != null) {
-//            double radius = properties.getOrDefault("radius", 0.0);
-//            canvas.setStroke(color);
-//            canvas.setFill(fillColor);
-//            canvas.strokeOval(position.getX() - radius, position.getY() - radius, 2 * radius, 2 * radius);
-//            canvas.fillOval(position.getX() - radius, position.getY() - radius, 2 * radius, 2 * radius);
-//        }
 
 }
